@@ -154,7 +154,7 @@ hr{
 }
 
 .works li {
-    border-radius: 16px;
+    border-radius: 30px;
     background-color: rgba(57, 62, 70, 0.5);
     backdrop-filter: blur(4px);
     padding: 1rem 4rem;
