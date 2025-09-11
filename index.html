@@ -64,13 +64,13 @@
             </div>
             <ul>
                 <li>
-                    <a href="https://www.mediafire.com/file/1cv3ljzeyzouna6/Ios_Whatsapp.7z/file" target="_blank"><img src="assets/imgs/WA.png" alt="Whatsapp"/></a>
-                </li>
-                <li>
-                    <a href="https://www.mediafire.com/file/ovjemhdrlh8cjqf/%25D8%25AE%25D8%25B7_%25D8%25A7%25D9%2584%25D8%25A7%25D9%258A%25D9%2581%25D9%2588%25D9%2586_%25D8%25A7%25D9%2584%25D8%25AC%25D8%25AF%25D9%258A%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D9%258A%25D8%25B615.otf/file" target="_blank"><img src="assets/imgs/font (1).png" alt="Font"/></a>
+                    <a href="https://www.mediafire.com/file/0ejev0uqwzn343x/%25D9%2588%25D8%25A7%25D8%25AA%25D8%25B3%25D8%25A7%25D8%25A8_%25D8%25A7%25D9%258A%25D9%2581%25D9%2588%25D9%2586_%252B_%25D8%25AE%25D8%25B7_%25D8%25A7%25D9%2584%25D8%25A7%25D9%258A%25D9%2581%25D9%2588%25D9%2586_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D9%258A%25D8%25B6.zip/file" target="_blank"><img src="assets/imgs/WA.png" alt="Whatsapp"/></a>
                 </li>
                 <li>
                     <a href="https://www.mediafire.com/file/eajtzxp1j3h6f5u/ios_keyboard.zip/file" target="_blank"><img src="assets/imgs/KB.png" alt="Keyboard"/></a>
+                </li>
+                <li>
+                    <a href="https://www.mediafire.com/file/hygza8zuijq325o/%25D9%2583%25D9%2580%25D9%2580%25D9%258A%25D9%2580%25D9%2580%25D9%2580%25D8%25A8_%25D8%25B2%25D8%25AE%25D9%2580%25D8%25B1%25D9%2581%25D9%2580%25D9%2580%25D9%2580%25D9%2580%25D9%2580%25D8%25A9.zip/file" target="_blank"><img src="assets/imgs/KB1.png" alt=""/></a>
                 </li>
             </ul>
         </div>
@@ -93,6 +93,25 @@
     <footer>
         <p>Built by MK.</p>
     </footer>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".aboutMe, .works, .contactContainer");
+
+    const revealSection = () => {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight - 100) {
+          section.classList.add("show");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealSection);
+    revealSection(); // عشان أول ما الصفحة تفتح يشتغل
+  });
+</script>
 
 
 

@@ -14,6 +14,21 @@ body {
     background: linear-gradient(to right, #220033, #000000);
 }
 
+.aboutMe, .works, .contactContainer { opacity: 0; transform: translateY(40px); }
+.aboutMe.show, .works.show, .contactContainer.show { opacity: 1; transform: translateY(0); }
+
+.aboutMe, .works, .contactContainer {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.aboutMe.show, .works.show, .contactContainer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
 header {
