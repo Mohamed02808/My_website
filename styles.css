@@ -12,6 +12,9 @@
 
 body {
     background: linear-gradient(to right, #220033, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .aboutMe, .works, .contactContainer { opacity: 0; transform: translateY(40px); }
@@ -266,7 +269,7 @@ footer {
   }
   .aboutName,
   .aboutTitle {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .light {
     width: 60px;
@@ -281,4 +284,39 @@ footer {
     padding: 5rem 0rem;
     gap: 3rem;
   }
+}
+
+/* تابلت */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem; /* بدل 5rem */
+  }
+  .heroImg {
+    width: 250px;
+  }
+  .aboutMe {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* موبايل */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .heroImg {
+    width: 200px;
+  }
+  .works {
+    padding: 2rem 1rem;
+  }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
